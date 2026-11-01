@@ -1,0 +1,899 @@
+{
+  "顧客一覧": {
+    "A2": [
+      "NAME"
+    ],
+    "B2": [
+      "NAME"
+    ],
+    "C2": [
+      "AGE"
+    ],
+    "D2": [
+      "EMAIL"
+    ],
+    "E2": [
+      "PHONE"
+    ],
+    "F2": [
+      "POSTAL_CODE"
+    ],
+    "G2": [
+      "ADDRESS"
+    ],
+    "H2": [
+      "MY_NUMBER"
+    ],
+    "I2": [
+      "CARD_NUMBER"
+    ],
+    "J2": [],
+    "A3": [
+      "NAME"
+    ],
+    "B3": [
+      "NAME"
+    ],
+    "C3": [
+      "AGE"
+    ],
+    "D3": [
+      "EMAIL"
+    ],
+    "E3": [
+      "PHONE"
+    ],
+    "F3": [
+      "POSTAL_CODE"
+    ],
+    "G3": [
+      "ADDRESS"
+    ],
+    "H3": [
+      "MY_NUMBER"
+    ],
+    "I3": [
+      "CARD_NUMBER"
+    ],
+    "J3": [
+      "NAME",
+      "PHONE"
+    ],
+    "A4": [
+      "NAME"
+    ],
+    "B4": [
+      "NAME"
+    ],
+    "C4": [
+      "AGE"
+    ],
+    "D4": [
+      "EMAIL"
+    ],
+    "E4": [
+      "PHONE"
+    ],
+    "F4": [
+      "POSTAL_CODE"
+    ],
+    "G4": [
+      "ADDRESS"
+    ],
+    "H4": [
+      "MY_NUMBER"
+    ],
+    "I4": [
+      "CARD_NUMBER"
+    ],
+    "J4": [
+      "NAME",
+      "EMAIL"
+    ],
+    "A5": [
+      "NAME"
+    ],
+    "B5": [
+      "NAME"
+    ],
+    "C5": [
+      "AGE"
+    ],
+    "D5": [
+      "EMAIL"
+    ],
+    "E5": [
+      "PHONE"
+    ],
+    "F5": [
+      "POSTAL_CODE"
+    ],
+    "G5": [
+      "ADDRESS"
+    ],
+    "H5": [
+      "MY_NUMBER"
+    ],
+    "I5": [
+      "CARD_NUMBER"
+    ],
+    "J5": [],
+    "A6": [
+      "NAME"
+    ],
+    "B6": [
+      "NAME"
+    ],
+    "C6": [
+      "AGE"
+    ],
+    "D6": [
+      "EMAIL"
+    ],
+    "E6": [
+      "PHONE"
+    ],
+    "F6": [
+      "POSTAL_CODE"
+    ],
+    "G6": [
+      "ADDRESS"
+    ],
+    "H6": [
+      "MY_NUMBER"
+    ],
+    "I6": [
+      "CARD_NUMBER"
+    ],
+    "J6": [],
+    "A7": [
+      "NAME"
+    ],
+    "B7": [
+      "NAME"
+    ],
+    "C7": [
+      "AGE"
+    ],
+    "D7": [
+      "EMAIL"
+    ],
+    "E7": [
+      "PHONE"
+    ],
+    "F7": [
+      "POSTAL_CODE"
+    ],
+    "G7": [
+      "ADDRESS"
+    ],
+    "H7": [
+      "MY_NUMBER"
+    ],
+    "I7": [
+      "CARD_NUMBER"
+    ],
+    "J7": [
+      "NAME",
+      "PHONE"
+    ],
+    "A8": [
+      "NAME"
+    ],
+    "B8": [
+      "NAME"
+    ],
+    "C8": [
+      "AGE"
+    ],
+    "D8": [
+      "EMAIL"
+    ],
+    "E8": [
+      "PHONE"
+    ],
+    "F8": [
+      "POSTAL_CODE"
+    ],
+    "G8": [
+      "ADDRESS"
+    ],
+    "H8": [
+      "MY_NUMBER"
+    ],
+    "I8": [
+      "CARD_NUMBER"
+    ],
+    "J8": [
+      "NAME",
+      "EMAIL"
+    ],
+    "A9": [
+      "NAME"
+    ],
+    "B9": [
+      "NAME"
+    ],
+    "C9": [
+      "AGE"
+    ],
+    "D9": [
+      "EMAIL"
+    ],
+    "E9": [
+      "PHONE"
+    ],
+    "F9": [
+      "POSTAL_CODE"
+    ],
+    "G9": [
+      "ADDRESS"
+    ],
+    "H9": [
+      "MY_NUMBER"
+    ],
+    "I9": [
+      "CARD_NUMBER"
+    ],
+    "J9": [],
+    "A10": [
+      "NAME"
+    ],
+    "B10": [
+      "NAME"
+    ],
+    "C10": [
+      "AGE"
+    ],
+    "D10": [
+      "EMAIL"
+    ],
+    "E10": [
+      "PHONE"
+    ],
+    "F10": [
+      "POSTAL_CODE"
+    ],
+    "G10": [
+      "ADDRESS"
+    ],
+    "H10": [
+      "MY_NUMBER"
+    ],
+    "I10": [
+      "CARD_NUMBER"
+    ],
+    "J10": [],
+    "A11": [
+      "NAME"
+    ],
+    "B11": [
+      "NAME"
+    ],
+    "C11": [
+      "AGE"
+    ],
+    "D11": [
+      "EMAIL"
+    ],
+    "E11": [
+      "PHONE"
+    ],
+    "F11": [
+      "POSTAL_CODE"
+    ],
+    "G11": [
+      "ADDRESS"
+    ],
+    "H11": [
+      "MY_NUMBER"
+    ],
+    "I11": [
+      "CARD_NUMBER"
+    ],
+    "J11": [
+      "NAME",
+      "PHONE"
+    ],
+    "A12": [
+      "NAME"
+    ],
+    "B12": [
+      "NAME"
+    ],
+    "C12": [
+      "AGE"
+    ],
+    "D12": [
+      "EMAIL"
+    ],
+    "E12": [
+      "PHONE"
+    ],
+    "F12": [
+      "POSTAL_CODE"
+    ],
+    "G12": [
+      "ADDRESS"
+    ],
+    "H12": [
+      "MY_NUMBER"
+    ],
+    "I12": [
+      "CARD_NUMBER"
+    ],
+    "J12": [
+      "NAME",
+      "EMAIL"
+    ],
+    "A13": [
+      "NAME"
+    ],
+    "B13": [
+      "NAME"
+    ],
+    "C13": [
+      "AGE"
+    ],
+    "D13": [
+      "EMAIL"
+    ],
+    "E13": [
+      "PHONE"
+    ],
+    "F13": [
+      "POSTAL_CODE"
+    ],
+    "G13": [
+      "ADDRESS"
+    ],
+    "H13": [
+      "MY_NUMBER"
+    ],
+    "I13": [
+      "CARD_NUMBER"
+    ],
+    "J13": [],
+    "A14": [
+      "NAME"
+    ],
+    "B14": [
+      "NAME"
+    ],
+    "C14": [
+      "AGE"
+    ],
+    "D14": [
+      "EMAIL"
+    ],
+    "E14": [
+      "PHONE"
+    ],
+    "F14": [
+      "POSTAL_CODE"
+    ],
+    "G14": [
+      "ADDRESS"
+    ],
+    "H14": [
+      "MY_NUMBER"
+    ],
+    "I14": [
+      "CARD_NUMBER"
+    ],
+    "J14": [],
+    "A15": [
+      "NAME"
+    ],
+    "B15": [
+      "NAME"
+    ],
+    "C15": [
+      "AGE"
+    ],
+    "D15": [
+      "EMAIL"
+    ],
+    "E15": [
+      "PHONE"
+    ],
+    "F15": [
+      "POSTAL_CODE"
+    ],
+    "G15": [
+      "ADDRESS"
+    ],
+    "H15": [
+      "MY_NUMBER"
+    ],
+    "I15": [
+      "CARD_NUMBER"
+    ],
+    "J15": [
+      "NAME",
+      "PHONE"
+    ],
+    "A16": [
+      "NAME"
+    ],
+    "B16": [
+      "NAME"
+    ],
+    "C16": [
+      "AGE"
+    ],
+    "D16": [
+      "EMAIL"
+    ],
+    "E16": [
+      "PHONE"
+    ],
+    "F16": [
+      "POSTAL_CODE"
+    ],
+    "G16": [
+      "ADDRESS"
+    ],
+    "H16": [
+      "MY_NUMBER"
+    ],
+    "I16": [
+      "CARD_NUMBER"
+    ],
+    "J16": [
+      "NAME",
+      "EMAIL"
+    ],
+    "A17": [
+      "NAME"
+    ],
+    "B17": [
+      "NAME"
+    ],
+    "C17": [
+      "AGE"
+    ],
+    "D17": [
+      "EMAIL"
+    ],
+    "E17": [
+      "PHONE"
+    ],
+    "F17": [
+      "POSTAL_CODE"
+    ],
+    "G17": [
+      "ADDRESS"
+    ],
+    "H17": [
+      "MY_NUMBER"
+    ],
+    "I17": [
+      "CARD_NUMBER"
+    ],
+    "J17": [],
+    "A18": [
+      "NAME"
+    ],
+    "B18": [
+      "NAME"
+    ],
+    "C18": [
+      "AGE"
+    ],
+    "D18": [
+      "EMAIL"
+    ],
+    "E18": [
+      "PHONE"
+    ],
+    "F18": [
+      "POSTAL_CODE"
+    ],
+    "G18": [
+      "ADDRESS"
+    ],
+    "H18": [
+      "MY_NUMBER"
+    ],
+    "I18": [
+      "CARD_NUMBER"
+    ],
+    "J18": [],
+    "A19": [
+      "NAME"
+    ],
+    "B19": [
+      "NAME"
+    ],
+    "C19": [
+      "AGE"
+    ],
+    "D19": [
+      "EMAIL"
+    ],
+    "E19": [
+      "PHONE"
+    ],
+    "F19": [
+      "POSTAL_CODE"
+    ],
+    "G19": [
+      "ADDRESS"
+    ],
+    "H19": [
+      "MY_NUMBER"
+    ],
+    "I19": [
+      "CARD_NUMBER"
+    ],
+    "J19": [
+      "NAME",
+      "PHONE"
+    ],
+    "A20": [
+      "NAME"
+    ],
+    "B20": [
+      "NAME"
+    ],
+    "C20": [
+      "AGE"
+    ],
+    "D20": [
+      "EMAIL"
+    ],
+    "E20": [
+      "PHONE"
+    ],
+    "F20": [
+      "POSTAL_CODE"
+    ],
+    "G20": [
+      "ADDRESS"
+    ],
+    "H20": [
+      "MY_NUMBER"
+    ],
+    "I20": [
+      "CARD_NUMBER"
+    ],
+    "J20": [
+      "NAME",
+      "EMAIL"
+    ],
+    "A21": [
+      "NAME"
+    ],
+    "B21": [
+      "NAME"
+    ],
+    "C21": [
+      "AGE"
+    ],
+    "D21": [
+      "EMAIL"
+    ],
+    "E21": [
+      "PHONE"
+    ],
+    "F21": [
+      "POSTAL_CODE"
+    ],
+    "G21": [
+      "ADDRESS"
+    ],
+    "H21": [
+      "MY_NUMBER"
+    ],
+    "I21": [
+      "CARD_NUMBER"
+    ],
+    "J21": []
+  },
+  "English": {
+    "A2": [
+      "NAME"
+    ],
+    "B2": [
+      "AGE"
+    ],
+    "C2": [
+      "EMAIL"
+    ],
+    "D2": [
+      "PHONE"
+    ],
+    "E2": [
+      "ADDRESS"
+    ],
+    "F2": [
+      "CARD_NUMBER"
+    ],
+    "G2": [],
+    "A3": [
+      "NAME"
+    ],
+    "B3": [
+      "AGE"
+    ],
+    "C3": [
+      "EMAIL"
+    ],
+    "D3": [
+      "PHONE"
+    ],
+    "E3": [
+      "ADDRESS"
+    ],
+    "F3": [
+      "CARD_NUMBER"
+    ],
+    "G3": [
+      "NAME",
+      "PHONE"
+    ],
+    "A4": [
+      "NAME"
+    ],
+    "B4": [
+      "AGE"
+    ],
+    "C4": [
+      "EMAIL"
+    ],
+    "D4": [
+      "PHONE"
+    ],
+    "E4": [
+      "ADDRESS"
+    ],
+    "F4": [
+      "CARD_NUMBER"
+    ],
+    "G4": [],
+    "A5": [
+      "NAME"
+    ],
+    "B5": [
+      "AGE"
+    ],
+    "C5": [
+      "EMAIL"
+    ],
+    "D5": [
+      "PHONE"
+    ],
+    "E5": [
+      "ADDRESS"
+    ],
+    "F5": [
+      "CARD_NUMBER"
+    ],
+    "G5": [
+      "NAME",
+      "PHONE"
+    ],
+    "A6": [
+      "NAME"
+    ],
+    "B6": [
+      "AGE"
+    ],
+    "C6": [
+      "EMAIL"
+    ],
+    "D6": [
+      "PHONE"
+    ],
+    "E6": [
+      "ADDRESS"
+    ],
+    "F6": [
+      "CARD_NUMBER"
+    ],
+    "G6": [],
+    "A7": [
+      "NAME"
+    ],
+    "B7": [
+      "AGE"
+    ],
+    "C7": [
+      "EMAIL"
+    ],
+    "D7": [
+      "PHONE"
+    ],
+    "E7": [
+      "ADDRESS"
+    ],
+    "F7": [
+      "CARD_NUMBER"
+    ],
+    "G7": [
+      "NAME",
+      "PHONE"
+    ],
+    "A8": [
+      "NAME"
+    ],
+    "B8": [
+      "AGE"
+    ],
+    "C8": [
+      "EMAIL"
+    ],
+    "D8": [
+      "PHONE"
+    ],
+    "E8": [
+      "ADDRESS"
+    ],
+    "F8": [
+      "CARD_NUMBER"
+    ],
+    "G8": [],
+    "A9": [
+      "NAME"
+    ],
+    "B9": [
+      "AGE"
+    ],
+    "C9": [
+      "EMAIL"
+    ],
+    "D9": [
+      "PHONE"
+    ],
+    "E9": [
+      "ADDRESS"
+    ],
+    "F9": [
+      "CARD_NUMBER"
+    ],
+    "G9": [
+      "NAME",
+      "PHONE"
+    ],
+    "A10": [
+      "NAME"
+    ],
+    "B10": [
+      "AGE"
+    ],
+    "C10": [
+      "EMAIL"
+    ],
+    "D10": [
+      "PHONE"
+    ],
+    "E10": [
+      "ADDRESS"
+    ],
+    "F10": [
+      "CARD_NUMBER"
+    ],
+    "G10": [],
+    "A11": [
+      "NAME"
+    ],
+    "B11": [
+      "AGE"
+    ],
+    "C11": [
+      "EMAIL"
+    ],
+    "D11": [
+      "PHONE"
+    ],
+    "E11": [
+      "ADDRESS"
+    ],
+    "F11": [
+      "CARD_NUMBER"
+    ],
+    "G11": [
+      "NAME",
+      "PHONE"
+    ]
+  },
+  "マイナンバー": {
+    "A2": [],
+    "B2": [
+      "MY_NUMBER"
+    ],
+    "A3": [],
+    "B3": [
+      "MY_NUMBER"
+    ],
+    "A4": [],
+    "B4": [
+      "MY_NUMBER"
+    ],
+    "A5": [],
+    "B5": [
+      "MY_NUMBER"
+    ],
+    "A6": [],
+    "B6": [
+      "MY_NUMBER"
+    ],
+    "A7": [],
+    "B7": [
+      "MY_NUMBER"
+    ],
+    "A8": [],
+    "B8": [
+      "MY_NUMBER"
+    ],
+    "A9": [],
+    "B9": [
+      "MY_NUMBER"
+    ],
+    "A10": [],
+    "B10": [],
+    "A11": [],
+    "B11": [],
+    "A12": [],
+    "B12": [],
+    "A13": [],
+    "B13": [],
+    "A14": [],
+    "B14": [
+      "PHONE"
+    ],
+    "A15": [],
+    "B15": [
+      "CARD_NUMBER"
+    ],
+    "A16": [],
+    "B16": [
+      "MY_NUMBER"
+    ],
+    "A17": [],
+    "B17": [
+      "MY_NUMBER"
+    ],
+    "A18": [],
+    "B18": [
+      "MY_NUMBER"
+    ],
+    "A19": [],
+    "B19": [
+      "MY_NUMBER"
+    ],
+    "A20": [],
+    "B20": [
+      "MY_NUMBER"
+    ],
+    "A21": [],
+    "B21": [
+      "MY_NUMBER"
+    ],
+    "A22": [],
+    "B22": [
+      "MY_NUMBER"
+    ],
+    "A23": [],
+    "B23": [
+      "MY_NUMBER"
+    ],
+    "A24": [],
+    "B24": [],
+    "A25": [],
+    "B25": [],
+    "A26": [],
+    "B26": [],
+    "A27": [],
+    "B27": [],
+    "A28": [],
+    "B28": [
+      "PHONE"
+    ],
+    "A29": [],
+    "B29": [
+      "CARD_NUMBER"
+    ]
+  }
+}

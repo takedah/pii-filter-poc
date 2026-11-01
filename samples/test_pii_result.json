@@ -1,0 +1,4907 @@
+{
+  "filename": "test_pii.xlsx",
+  "sheets": [
+    {
+      "name": "顧客一覧",
+      "rows": [
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "氏名",
+              "masked": "氏名",
+              "types": []
+            },
+            {
+              "original": "フリガナ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "年齢",
+              "masked": "年齢",
+              "types": []
+            },
+            {
+              "original": "メールアドレス",
+              "masked": "メールアドレス",
+              "types": []
+            },
+            {
+              "original": "電話番号",
+              "masked": "電話番号",
+              "types": []
+            },
+            {
+              "original": "郵便番号",
+              "masked": "郵便番号",
+              "types": []
+            },
+            {
+              "original": "住所",
+              "masked": "住所",
+              "types": []
+            },
+            {
+              "original": "マイナンバー",
+              "masked": "マイナンバー",
+              "types": []
+            },
+            {
+              "original": "クレジットカード",
+              "masked": "クレジットカード",
+              "types": []
+            },
+            {
+              "original": "備考",
+              "masked": "備考",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "佐藤太郎",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "サトウタロウ",
+              "masked": "サトウタロウ",
+              "types": []
+            },
+            {
+              "original": "65",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user000@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "0300000000",
+              "masked": "{JP_PHONE}",
+              "types": [
+                "JP_PHONE"
+              ]
+            },
+            {
+              "original": "433-2181",
+              "masked": "{JP_POSTAL_CODE}",
+              "types": [
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "北海道札幌市中央区架空町7-8-15",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "960013389084",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "特記事項なし",
+              "masked": "特記事項なし",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "山田 一郎",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "ヤマダ イチロウ",
+              "masked": "ヤマダ イチロウ",
+              "types": []
+            },
+            {
+              "original": "25",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user001@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0001",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "〒654-2351",
+              "masked": "{JP_POSTAL_CODE}",
+              "types": [
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "北海道札幌市中央区架空町5-20-29",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "1615 5940 7814",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "山田様より電話あり。折り返しは 090-0000-0001 まで",
+              "masked": "{NAME}様より電話あり。折り返しは {PHONE}{JP_PHONE}{JP_POSTAL_CODE} まで",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "加藤美咲",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "カトウミサキ",
+              "masked": "カトウミサキ",
+              "types": []
+            },
+            {
+              "original": "54",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user002@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0002",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "103-4131",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "大阪府大阪市北区架空町3-15-13",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "647525534191",
+              "masked": "{PHONE}{JP_MYNUMBER}",
+              "types": [
+                "PHONE",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "担当: 鈴木（staff002@example.jp）",
+              "masked": "担当: {NAME}（{EMAIL}）",
+              "types": [
+                "NAME",
+                "EMAIL"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "小林 美咲",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "コバヤシ ミサキ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "67",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user003@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "0300000003",
+              "masked": "{JP_PHONE}",
+              "types": [
+                "JP_PHONE"
+              ]
+            },
+            {
+              "original": "〒503-0564",
+              "masked": "{JP_POSTAL_CODE}{ADDRESS}",
+              "types": [
+                "JP_POSTAL_CODE",
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "北海道札幌市中央区架空町9-9-24",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "1395 3767 2420",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "6011111111111117",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "田中工業株式会社との取引あり",
+              "masked": "{NAME}工業株式会社との取引あり",
+              "types": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "加藤翔太",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "カトウショウタ",
+              "masked": "カトウショウタ",
+              "types": []
+            },
+            {
+              "original": "55",
+              "masked": "55",
+              "types": []
+            },
+            {
+              "original": "user004@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0004",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "532-8710",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "東京都千代田区架空町2-18-25",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "122691669784",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "特記事項なし",
+              "masked": "特記事項なし",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "伊藤 花子",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "イトウ ハナコ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "78",
+              "masked": "78",
+              "types": []
+            },
+            {
+              "original": "user005@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0005",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "〒462-7048",
+              "masked": "{JP_POSTAL_CODE}",
+              "types": [
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "東京都千代田区架空町6-16-1",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "2814 8932 5284",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "4111 1111 1111 1111",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "伊藤様より電話あり。折り返しは 090-0000-0005 まで",
+              "masked": "{NAME}様より電話あり。折り返しは {PHONE}{JP_PHONE}{JP_POSTAL_CODE} まで",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "伊藤健太",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "イトウケンタ",
+              "masked": "イトウケンタ",
+              "types": []
+            },
+            {
+              "original": "79",
+              "masked": "79",
+              "types": []
+            },
+            {
+              "original": "user006@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "0300000006",
+              "masked": "{JP_PHONE}",
+              "types": [
+                "JP_PHONE"
+              ]
+            },
+            {
+              "original": "303-9117",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "北海道札幌市中央区架空町4-10-13",
+              "masked": "{ADDRESS}4-10-13",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "182278248960",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "担当: 高橋（staff006@example.jp）",
+              "masked": "担当: {NAME}（{EMAIL}）",
+              "types": [
+                "NAME",
+                "EMAIL"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "中村 大輔",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "ナカムラ ダイスケ",
+              "masked": "ナカムラ ダイスケ",
+              "types": []
+            },
+            {
+              "original": "24",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user007@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0007",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "〒713-3150",
+              "masked": "{ADDRESS}{JP_POSTAL_CODE}",
+              "types": [
+                "ADDRESS",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "北海道札幌市中央区架空町4-9-22",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "9839 3010 3106",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "6011111111111117",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "田中工業株式会社との取引あり",
+              "masked": "{NAME}工業株式会社との取引あり",
+              "types": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "高橋大輔",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "タカハシダイスケ",
+              "masked": "タカハシダイスケ",
+              "types": []
+            },
+            {
+              "original": "66",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user008@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0008",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "299-7376",
+              "masked": "{JP_POSTAL_CODE}",
+              "types": [
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "愛知県名古屋市中区架空町2-8-7",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "311656670106",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "特記事項なし",
+              "masked": "特記事項なし",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "小林 結衣",
+              "masked": "{NAME}衣",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "コバヤシ ユイ",
+              "masked": "コバヤシ ユイ",
+              "types": []
+            },
+            {
+              "original": "33",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user009@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "0300000009",
+              "masked": "{JP_PHONE}",
+              "types": [
+                "JP_PHONE"
+              ]
+            },
+            {
+              "original": "〒262-4731",
+              "masked": "{JP_POSTAL_CODE}{ADDRESS}",
+              "types": [
+                "JP_POSTAL_CODE",
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "福岡県福岡市博多区架空町1-6-13",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "7810 8013 2673",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "4111 1111 1111 1111",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "小林様より電話あり。折り返しは 0300000009 まで",
+              "masked": "{NAME}様より電話あり。折り返しは {PHONE}{JP_PHONE} まで",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_PHONE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "渡辺健太",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "ワタナベケンタ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "78",
+              "masked": "78",
+              "types": []
+            },
+            {
+              "original": "user010@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0010",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "746-8723",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "北海道札幌市中央区架空町3-2-17",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "430980500972",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "4111 1111 1111 1111",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "担当: 小林（staff010@example.jp）",
+              "masked": "担当: {NAME}（{EMAIL}）",
+              "types": [
+                "NAME",
+                "EMAIL"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "鈴木 花子",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "スズキ ハナコ",
+              "masked": "スズキ {ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "62",
+              "masked": "62",
+              "types": []
+            },
+            {
+              "original": "user011@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0011",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "〒913-6193",
+              "masked": "{ADDRESS}{JP_POSTAL_CODE}",
+              "types": [
+                "ADDRESS",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "愛知県名古屋市中区架空町4-9-13",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "9909 1699 8547",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "田中工業株式会社との取引あり",
+              "masked": "{NAME}工業株式会社との取引あり",
+              "types": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "田中結衣",
+              "masked": "田中結衣",
+              "types": []
+            },
+            {
+              "original": "タナカユイ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "48",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user012@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "0300000012",
+              "masked": "{JP_PHONE}",
+              "types": [
+                "JP_PHONE"
+              ]
+            },
+            {
+              "original": "510-7991",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "北海道札幌市中央区架空町5-20-26",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "183842513543",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "4111 1111 1111 1111",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "特記事項なし",
+              "masked": "特記事項なし",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "小林 健太",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "コバヤシ ケンタ",
+              "masked": "コバヤシ ケンタ",
+              "types": []
+            },
+            {
+              "original": "60",
+              "masked": "60",
+              "types": []
+            },
+            {
+              "original": "user013@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0013",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "〒124-1182",
+              "masked": "{ADDRESS}{JP_POSTAL_CODE}",
+              "types": [
+                "ADDRESS",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "福岡県福岡市博多区架空町5-2-1",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "4493 5348 7408",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "小林様より電話あり。折り返しは 090-0000-0013 まで",
+              "masked": "{NAME}様より電話あり。折り返しは {PHONE}{JP_PHONE}{JP_POSTAL_CODE} まで",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "鈴木健太",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "スズキケンタ",
+              "masked": "スズキケンタ",
+              "types": []
+            },
+            {
+              "original": "43",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user014@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0014",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "278-6801",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "東京都千代田区架空町6-7-22",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "128059826201",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "担当: 田中（staff014@example.jp）",
+              "masked": "担当: {NAME}（{EMAIL}）",
+              "types": [
+                "NAME",
+                "EMAIL"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "佐藤 陽菜",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "サトウ ヒナ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "34",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user015@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "0300000015",
+              "masked": "{JP_PHONE}",
+              "types": [
+                "JP_PHONE"
+              ]
+            },
+            {
+              "original": "〒869-2322",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "大阪府大阪市北区架空町8-12-10",
+              "masked": "{ADDRESS}8-12-10",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "6025 6342 1607",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "田中工業株式会社との取引あり",
+              "masked": "{NAME}工業株式会社との取引あり",
+              "types": [
+                "NAME"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "高橋太郎",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "タカハシタロウ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "58",
+              "masked": "58",
+              "types": []
+            },
+            {
+              "original": "user016@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0016",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "365-4145",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "福岡県福岡市博多区架空町6-11-14",
+              "masked": "{ADDRESS}6-11-14",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "868501429407",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "4111 1111 1111 1111",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "特記事項なし",
+              "masked": "特記事項なし",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "渡辺 さくら",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "ワタナベ サクラ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "40",
+              "masked": "40",
+              "types": []
+            },
+            {
+              "original": "user017@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0017",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "〒340-6088",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "福岡県福岡市博多区架空町5-18-5",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "3561 5951 4846",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "渡辺様より電話あり。折り返しは 090-0000-0017 まで",
+              "masked": "{NAME}様より電話あり。折り返しは {PHONE}{JP_PHONE}{JP_POSTAL_CODE} まで",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "渡辺翔太",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "ワタナベショウタ",
+              "masked": "ワタナベショウタ",
+              "types": []
+            },
+            {
+              "original": "50",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "user018@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "0300000018",
+              "masked": "{JP_PHONE}",
+              "types": [
+                "JP_PHONE"
+              ]
+            },
+            {
+              "original": "299-4680",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "大阪府大阪市北区架空町2-10-17",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "443699577731",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "担当: 小林（staff018@example.jp）",
+              "masked": "担当: {NAME}（{EMAIL}）",
+              "types": [
+                "NAME",
+                "EMAIL"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "佐藤 美咲",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "サトウ ミサキ",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "61",
+              "masked": "61",
+              "types": []
+            },
+            {
+              "original": "user019@example.jp",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "090-0000-0019",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "〒433-2003",
+              "masked": "{JP_POSTAL_CODE}",
+              "types": [
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "東京都千代田区架空町2-14-8",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "7917 6936 7631",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "田中工業株式会社との取引あり",
+              "masked": "{NAME}工業株式会社との取引あり",
+              "types": [
+                "NAME"
+              ]
+            }
+          ]
+        }
+      ],
+      "detections": [
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "フリガナ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "佐藤太郎",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "65",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user000@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "北海道札幌市中央区架空町7-8-15",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "山田 一郎",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "25",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user001@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0001",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "北海道札幌市中央区架空町5-20-29",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "山田",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0001",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "加藤美咲",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "54",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user002@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0002",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "103-4131",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "大阪府大阪市北区架空町3-15-13",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "647525534191",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "鈴木",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "staff002@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "小林 美咲",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "コバヤシ ミサキ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "67",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user003@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "503-0564",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "北海道札幌市中央区架空町9-9-24",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "6011111111111117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "田中",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "加藤翔太",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user004@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0004",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "532-8710",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "東京都千代田区架空町2-18-25",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "伊藤 花子",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "イトウ ハナコ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user005@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "東京都千代田区架空町6-16-1",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "4111 1111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "伊藤",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "伊藤健太",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user006@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "303-9117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "北海道札幌市中央区架空町",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "高橋",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "staff006@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "中村 大輔",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "24",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user007@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0007",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "〒713-3150",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "北海道札幌市中央区架空町4-9-22",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "6011111111111117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "田中",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "高橋大輔",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "66",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user008@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0008",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "愛知県名古屋市中区架空町2-8-7",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "小林 結",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "33",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user009@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "262-4731",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "福岡県福岡市博多区架空町1-6-13",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "4111 1111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "小林",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "0300000009",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "渡辺健太",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "ワタナベケンタ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user010@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0010",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "746-8723",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "北海道札幌市中央区架空町3-2-17",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "4111 1111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "小林",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "staff010@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "鈴木 花子",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "ハナコ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user011@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0011",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "〒913-6193",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "愛知県名古屋市中区架空町4-9-13",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "田中",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "タナカユイ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "48",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user012@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "510-7991",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "北海道札幌市中央区架空町5-20-26",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "4111 1111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "小林 健太",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user013@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0013",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "〒124-1182",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "福岡県福岡市博多区架空町5-2-1",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "小林",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0013",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "鈴木健太",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "43",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user014@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0014",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "278-6801",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "東京都千代田区架空町6-7-22",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "田中",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "staff014@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "佐藤 陽菜",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "サトウ ヒナ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "34",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user015@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "〒869-2322",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "大阪府大阪市北区架空町",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "田中",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "高橋太郎",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "タカハシタロウ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user016@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0016",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "365-4145",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "福岡県福岡市博多区架空町",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "4111 1111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "渡辺 さくら",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "ワタナベ サクラ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user017@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0017",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "〒340-6088",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "福岡県福岡市博多区架空町5-18-5",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "渡辺",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0017",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "渡辺翔太",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "50",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user018@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "299-4680",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "大阪府大阪市北区架空町2-10-17",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "小林",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "staff018@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "佐藤 美咲",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "サトウ ミサキ",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "user019@example.jp",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-0019",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "東京都千代田区架空町2-14-8",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "田中",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "433-2181",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "960013389084",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0001",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒654-2351",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "1615 5940 7814",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0001",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0002",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "103-4131",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "647525534191",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000003",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒503-0564",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "1395 3767 2420",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0004",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "532-8710",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "122691669784",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒462-7048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "2814 8932 5284",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000006",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "303-9117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "182278248960",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0007",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒713-3150",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "9839 3010 3106",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0008",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "299-7376",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "311656670106",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000009",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒262-4731",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "7810 8013 2673",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000009",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0010",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "746-8723",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "430980500972",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0011",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒913-6193",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "9909 1699 8547",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000012",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "510-7991",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "183842513543",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0013",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒124-1182",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4493 5348 7408",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0013",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0014",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "278-6801",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "128059826201",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000015",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒869-2322",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "6025 6342 1607",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0016",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "365-4145",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "868501429407",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0017",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒340-6088",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "3561 5951 4846",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0017",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "0300000018",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "299-4680",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "443699577731",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-0019",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "〒433-2003",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "7917 6936 7631",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        }
+      ]
+    },
+    {
+      "name": "English",
+      "rows": [
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Name",
+              "masked": "Name",
+              "types": []
+            },
+            {
+              "original": "Age",
+              "masked": "Age",
+              "types": []
+            },
+            {
+              "original": "Email",
+              "masked": "Email",
+              "types": []
+            },
+            {
+              "original": "Phone",
+              "masked": "Phone",
+              "types": []
+            },
+            {
+              "original": "Address",
+              "masked": "Address",
+              "types": []
+            },
+            {
+              "original": "Card",
+              "masked": "Card",
+              "types": []
+            },
+            {
+              "original": "Notes",
+              "masked": "Notes",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "John Smith",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "71",
+              "masked": "71",
+              "types": []
+            },
+            {
+              "original": "john@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0100",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "812 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "6011111111111117",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "No remarks",
+              "masked": "No remarks",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Emily Johnson",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "23",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "emily@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0101",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "670 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "Call back Emily at +1-202-555-0101",
+              "masked": "Call back {NAME} at {PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Michael Brown",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "78",
+              "masked": "78",
+              "types": []
+            },
+            {
+              "original": "michael@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0102",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "968 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "4111 1111 1111 1111",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "No remarks",
+              "masked": "No remarks",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Sarah Davis",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "49",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "sarah@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0103",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "236 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "6011111111111117",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "Call back Sarah at +1-202-555-0103",
+              "masked": "Call back {NAME} at {PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "David Wilson",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "62",
+              "masked": "62",
+              "types": []
+            },
+            {
+              "original": "david@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0104",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "643 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "No remarks",
+              "masked": "No remarks",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Jessica Taylor",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "68",
+              "masked": "68",
+              "types": []
+            },
+            {
+              "original": "jessica@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0105",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "553 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "6011111111111117",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "Call back Jessica at +1-202-555-0105",
+              "masked": "Call back {NAME} at {PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "James Anderson",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "73",
+              "masked": "73",
+              "types": []
+            },
+            {
+              "original": "james@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0106",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "661 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "6011111111111117",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "No remarks",
+              "masked": "No remarks",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Ashley Thomas",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "77",
+              "masked": "77",
+              "types": []
+            },
+            {
+              "original": "ashley@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0107",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "262 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "6011111111111117",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "Call back Ashley at +1-202-555-0107",
+              "masked": "Call back {NAME} at {PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Robert Martin",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "48",
+              "masked": "{AGE}",
+              "types": [
+                "AGE"
+              ]
+            },
+            {
+              "original": "robert@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0108",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "365 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            },
+            {
+              "original": "No remarks",
+              "masked": "No remarks",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "Laura White",
+              "masked": "{NAME}",
+              "types": [
+                "NAME"
+              ]
+            },
+            {
+              "original": "73",
+              "masked": "73",
+              "types": []
+            },
+            {
+              "original": "laura@example.com",
+              "masked": "{EMAIL}",
+              "types": [
+                "EMAIL"
+              ]
+            },
+            {
+              "original": "+1-202-555-0109",
+              "masked": "{PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            },
+            {
+              "original": "752 Example St, Anytown, IL 62701",
+              "masked": "{ADDRESS}",
+              "types": [
+                "ADDRESS"
+              ]
+            },
+            {
+              "original": "378282246310005",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER"
+              ]
+            },
+            {
+              "original": "Call back Laura at +1-202-555-0109",
+              "masked": "Call back {NAME} at {PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "NAME",
+                "PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        }
+      ],
+      "detections": [
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "John Smith",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "john@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0100",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "812 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "6011111111111117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Emily Johnson",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "23",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "emily@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0101",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "670 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Emily",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0101",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Michael Brown",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "michael@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0102",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "968 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "4111 1111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Sarah Davis",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "49",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "sarah@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0103",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "236 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "6011111111111117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Sarah",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0103",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "David Wilson",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "david@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0104",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "643 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Jessica Taylor",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "jessica@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0105",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "553 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "6011111111111117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Jessica",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0105",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "James Anderson",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "james@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0106",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "661 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "6011111111111117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Ashley Thomas",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "ashley@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0107",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "262 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "6011111111111117",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Ashley",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0107",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Robert Martin",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "AGE",
+          "match": "48",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "robert@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0108",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "365 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Laura White",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "EMAIL",
+          "match": "laura@example.com",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0109",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "ADDRESS",
+          "match": "752 Example St, Anytown, IL 62701",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "378282246310005",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "NAME",
+          "match": "Laura",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "+1-202-555-0109",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0100",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0101",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0101",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0102",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0103",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0103",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0104",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0105",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0105",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0106",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0107",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0107",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0108",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0109",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "555-0109",
+          "action": "ANONYMIZED"
+        }
+      ]
+    },
+    {
+      "name": "マイナンバー",
+      "rows": [
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "ケース",
+              "masked": "ケース",
+              "types": []
+            },
+            {
+              "original": "値",
+              "masked": "値",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "区切りなし",
+              "masked": "区切りなし",
+              "types": []
+            },
+            {
+              "original": "873471434552",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "空白区切り",
+              "masked": "空白区切り",
+              "types": []
+            },
+            {
+              "original": "8734 7143 4552",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "ハイフン区切り",
+              "masked": "ハイフン区切り",
+              "types": []
+            },
+            {
+              "original": "8734-7143-4552",
+              "masked": "{PHONE}{JP_MYNUMBER}",
+              "types": [
+                "PHONE",
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "全角数字",
+              "masked": "全角数字",
+              "types": []
+            },
+            {
+              "original": "８７３４７１４３４５５２",
+              "masked": "{JP_MYNUMBER_FULLWIDTH}",
+              "types": [
+                "JP_MYNUMBER_FULLWIDTH"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "全角数字・全角ハイフン区切り",
+              "masked": "全角数字・全角ハイフン区切り",
+              "types": []
+            },
+            {
+              "original": "８７３４－７１４３－４５５２",
+              "masked": "{JP_MYNUMBER_FULLWIDTH}",
+              "types": [
+                "JP_MYNUMBER_FULLWIDTH"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "文中",
+              "masked": "文中",
+              "types": []
+            },
+            {
+              "original": "マイナンバーは873471434552です",
+              "masked": "マイナンバーは{JP_MYNUMBER}です",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "ラベル付き",
+              "masked": "ラベル付き",
+              "types": []
+            },
+            {
+              "original": "個人番号: 8734 7143 4552",
+              "masked": "個人番号: {JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "2 件を含む",
+              "masked": "2 件を含む",
+              "types": []
+            },
+            {
+              "original": "本人 873471434552 / 配偶者 812236231661",
+              "masked": "本人 {JP_MYNUMBER} / 配偶者 {JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER",
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "11 桁の数字",
+              "masked": "11 桁の数字",
+              "types": []
+            },
+            {
+              "original": "58760366909",
+              "masked": "58760366909",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "13 桁の数字 (法人番号など)",
+              "masked": "13 桁の数字 (法人番号など)",
+              "types": []
+            },
+            {
+              "original": "6705466889373",
+              "masked": "6705466889373",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "12 桁の注文番号",
+              "masked": "12 桁の注文番号",
+              "types": []
+            },
+            {
+              "original": "注文番号 467065627298",
+              "masked": "注文番号 {JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "12 桁の日時",
+              "masked": "12 桁の日時",
+              "types": []
+            },
+            {
+              "original": "202611011230",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "携帯電話番号",
+              "masked": "携帯電話番号",
+              "types": []
+            },
+            {
+              "original": "090-0000-9000",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "クレジットカード番号",
+              "masked": "クレジットカード番号",
+              "types": []
+            },
+            {
+              "original": "4111 1111 1111 1111",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "区切りなし",
+              "masked": "区切りなし",
+              "types": []
+            },
+            {
+              "original": "699016272048",
+              "masked": "{PHONE}{JP_MYNUMBER}",
+              "types": [
+                "PHONE",
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "空白区切り",
+              "masked": "空白区切り",
+              "types": []
+            },
+            {
+              "original": "6990 1627 2048",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "ハイフン区切り",
+              "masked": "ハイフン区切り",
+              "types": []
+            },
+            {
+              "original": "6990-1627-2048",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "全角数字",
+              "masked": "全角数字",
+              "types": []
+            },
+            {
+              "original": "６９９０１６２７２０４８",
+              "masked": "{PHONE}{JP_MYNUMBER_FULLWIDTH}",
+              "types": [
+                "PHONE",
+                "JP_MYNUMBER_FULLWIDTH"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "全角数字・全角ハイフン区切り",
+              "masked": "全角数字・全角ハイフン区切り",
+              "types": []
+            },
+            {
+              "original": "６９９０－１６２７－２０４８",
+              "masked": "{JP_MYNUMBER_FULLWIDTH}",
+              "types": [
+                "JP_MYNUMBER_FULLWIDTH"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "文中",
+              "masked": "文中",
+              "types": []
+            },
+            {
+              "original": "マイナンバーは699016272048です",
+              "masked": "マイナンバーは{JP_MYNUMBER}です",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "ラベル付き",
+              "masked": "ラベル付き",
+              "types": []
+            },
+            {
+              "original": "個人番号: 6990 1627 2048",
+              "masked": "個人番号: {JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "2 件を含む",
+              "masked": "2 件を含む",
+              "types": []
+            },
+            {
+              "original": "本人 699016272048 / 配偶者 653755646410",
+              "masked": "本人 {JP_MYNUMBER} / 配偶者 {JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER",
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "11 桁の数字",
+              "masked": "11 桁の数字",
+              "types": []
+            },
+            {
+              "original": "70805310033",
+              "masked": "70805310033",
+              "types": []
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "13 桁の数字 (法人番号など)",
+              "masked": "13 桁の数字 (法人番号など)",
+              "types": []
+            },
+            {
+              "original": "0923271937452",
+              "masked": "{PHONE}",
+              "types": [
+                "PHONE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "12 桁の注文番号",
+              "masked": "12 桁の注文番号",
+              "types": []
+            },
+            {
+              "original": "注文番号 991241904966",
+              "masked": "注文番号 {JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "12 桁の日時",
+              "masked": "12 桁の日時",
+              "types": []
+            },
+            {
+              "original": "202611021230",
+              "masked": "{JP_MYNUMBER}",
+              "types": [
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "携帯電話番号",
+              "masked": "携帯電話番号",
+              "types": []
+            },
+            {
+              "original": "090-0000-9001",
+              "masked": "{PHONE}{JP_PHONE}{JP_POSTAL_CODE}",
+              "types": [
+                "PHONE",
+                "JP_PHONE",
+                "JP_POSTAL_CODE"
+              ]
+            }
+          ]
+        },
+        {
+          "mapped": true,
+          "cells": [
+            {
+              "original": "クレジットカード番号",
+              "masked": "クレジットカード番号",
+              "types": []
+            },
+            {
+              "original": "5555-5555-5555-4444",
+              "masked": "{CREDIT_DEBIT_CARD_NUMBER}{JP_MYNUMBER}",
+              "types": [
+                "CREDIT_DEBIT_CARD_NUMBER",
+                "JP_MYNUMBER"
+              ]
+            }
+          ]
+        }
+      ],
+      "detections": [
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "8734-7143-4552",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-9000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "4111 1111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "699016272048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "６９９０１６２７２０４８",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "0923271937452",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "PHONE",
+          "match": "090-0000-9001",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "PII",
+          "type": "CREDIT_DEBIT_CARD_NUMBER",
+          "match": "5555-5555-5555-4444",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "873471434552",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "8734 7143 4552",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "8734-7143-4552",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER_FULLWIDTH",
+          "match": "８７３４７１４３４５５２",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER_FULLWIDTH",
+          "match": "８７３４－７１４３－４５５２",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "873471434552",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "8734 7143 4552",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "873471434552",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "812236231661",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "467065627298",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "202611011230",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-9000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "4111 1111 1111",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "699016272048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "6990 1627 2048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "6990-1627-2048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER_FULLWIDTH",
+          "match": "６９９０１６２７２０４８",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER_FULLWIDTH",
+          "match": "６９９０－１６２７－２０４８",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "699016272048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "6990 1627 2048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "699016272048",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "653755646410",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "991241904966",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "202611021230",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_PHONE",
+          "match": "090-0000-9001",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_POSTAL_CODE",
+          "match": "090-0000",
+          "action": "ANONYMIZED"
+        },
+        {
+          "filter": "REGEX",
+          "type": "JP_MYNUMBER",
+          "match": "5555-5555-5555",
+          "action": "ANONYMIZED"
+        }
+      ]
+    }
+  ],
+  "instruction": {
+    "masked": "このデータの傾向を要約してください。",
+    "detections": []
+  },
+  "claude": {
+    "model_id": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
+    "answer": "# データ傾向分析の要約\n\n## 主要な傾向\n\n### 1. **顧客属性の特徴**\n- **年齢層**: 40～79歳の中高年層が中心（平均60代と推定）\n- **高齢顧客の割合が高い**: 70代以上の顧客が複数確認される\n- **男性名が多数**: 識別可能な名前から男性顧客の比率が高い傾向\n\n### 2. **ビジネス関係**\n- **{NAME}工業株式会社との取引頻度が高い**: 複数の顧客が同社との取引関係を記録\n- **B2B要素**: 企業名が複数出現し、法人取引の存在を示唆\n\n### 3. **顧客管理上の特徴**\n- **フォローアップ必要顧客**: 「電話あり・折り返し必要」の記載が約40%\n- **担当者配置**: 複数の顧客に対して個別の担当者（{NAME}）が割り当てられている\n- **定期的な連絡体制**: 折り返し対応のプロセスが確立している\n\n### 4. **データ品質の課題**\n- **データ入力の不整合**: 個人情報マスク表記の位置がセル内で混在\n- **住所情報の一貫性欠如**: 一部で区切り記号や形式にばらつき\n- **複数の連絡先情報が重複**: 電話番号と郵便番号が同じフィールドに混在\n\n### 5. **セキュリティ観点**\n- **機密情報の集約**: マイナンバー、クレジットカード情報が一元管理されている\n- **情報管理リスク**: 個人情報が複数の形式で保存されている（全角・半角数字など）\n\n## 結論\n高齢顧客を主体とした安定顧客基盤で、企業取引も含む多層的なビジネス展開がみられます。ただし、データ品質の統一化と機密情報の管理体制の改善が必要です。",
+    "answer_masked": "# データ傾向分析の要約\n\n## 主要な傾向\n\n### 1. **顧客属性の特徴**\n- **年齢層**: {AGE}～79歳の中高年層が中心（平均{AGE}代と推定）\n- **高齢顧客の割合が高い**: {AGE}代以上の顧客が複数確認される\n- **男性名が多数**: 識別可能な名前から男性顧客の比率が高い傾向\n\n### 2. **ビジネス関係**\n- **{NAME}工業株式会社との取引頻度が高い**: 複数の顧客が同社との取引関係を記録\n- **B2B要素**: 企業名が複数出現し、法人取引の存在を示唆\n\n### 3. **顧客管理上の特徴**\n- **フォローアップ必要顧客**: 「電話あり・折り返し必要」の記載が約40%\n- **担当者配置**: 複数の顧客に対して個別の担当者（{NAME}）が割り当てられている\n- **定期的な連絡体制**: 折り返し対応のプロセスが確立している\n\n### 4. **データ品質の課題**\n- **データ入力の不整合**: 個人情報マスク表記の位置がセル内で混在\n- **住所情報の一貫性欠如**: 一部で区切り記号や形式にばらつき\n- **複数の連絡先情報が重複**: 電話番号と郵便番号が同じフィールドに混在\n\n### 5. **セキュリティ観点**\n- **機密情報の集約**: マイナンバー、クレジットカード情報が一元管理されている\n- **情報管理リスク**: 個人情報が複数の形式で保存されている（全角・半角数字など）\n\n## 結論\n高齢顧客を主体とした安定顧客基盤で、企業取引も含む多層的なビジネス展開がみられます。ただし、データ品質の統一化と機密情報の管理体制の改善が必要です。",
+    "detections": [
+      {
+        "filter": "PII",
+        "type": "AGE",
+        "match": "40",
+        "action": "ANONYMIZED"
+      },
+      {
+        "filter": "PII",
+        "type": "AGE",
+        "match": "60",
+        "action": "ANONYMIZED"
+      },
+      {
+        "filter": "PII",
+        "type": "AGE",
+        "match": "70",
+        "action": "ANONYMIZED"
+      }
+    ],
+    "usage": {
+      "inputTokens": 3191,
+      "outputTokens": 618,
+      "totalTokens": 3809,
+      "cacheReadInputTokens": 0,
+      "cacheWriteInputTokens": 0
+    }
+  },
+  "guardrail_usage": {
+    "topicPolicyUnits": 0,
+    "contentPolicyUnits": 0,
+    "wordPolicyUnits": 0,
+    "sensitiveInformationPolicyUnits": 8,
+    "sensitiveInformationPolicyFreeUnits": 8,
+    "contextualGroundingPolicyUnits": 0,
+    "contentPolicyImageUnits": 0
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "PiiFilterPoc",
+  "version": 2,
+  "managedBy": "CDK",
+  "runtimes": [
+    {
+      "name": "PiiFilterPoc",
+      "description": "Excel PII filter PoC (Bedrock Guardrails + Claude via jp. inference profile)",
+      "build": "CodeZip",
+      "entrypoint": "main.py",
+      "codeLocation": "app/PiiFilterPoc",
+      "runtimeVersion": "PYTHON_3_13",
+      "envVars": [
+        {
+          "name": "GUARDRAIL_ID",
+          "value": "<GUARDRAIL_ID>"
+        },
+        {
+          "name": "GUARDRAIL_VERSION",
+          "value": "2"
+        },
+        {
+          "name": "MODEL_ID",
+          "value": "jp.anthropic.claude-haiku-4-5-20251001-v1:0"
+        }
+      ],
+      "protocol": "HTTP",
+      "executionRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/<EXECUTION_ROLE_NAME>",
+      "authorizerType": "CUSTOM_JWT",
+      "authorizerConfiguration": {
+        "customJwtAuthorizer": {
+          "discoveryUrl": "https://cognito-idp.ap-northeast-1.amazonaws.com/<USER_POOL_ID>/.well-known/openid-configuration",
+          "allowedClients": [
+            "<CLIENT_ID>"
+          ]
+        }
+      }
+    }
+  ],
+  "memories": [],
+  "knowledgeBases": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "configBundles": [],
+  "harnesses": []
+}

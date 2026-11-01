@@ -1,0 +1,86 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1f2328;
+  background: #f6f8fa;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+form.card label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+form.card input,
+form.card textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: #cf222e;
+}
+
+.answer {
+  white-space: pre-wrap;
+  background: #f6f8fa;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table.sheet,
+table.kv {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table.sheet td,
+table.kv th,
+table.kv td {
+  border: 1px solid #d0d7de;
+  padding: 4px 8px;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+table.sheet tr:first-child td {
+  font-weight: bold;
+  background: #f6f8fa;
+}
+
+td.detected {
+  background: #fff8c5;
+}
+
+td.detected .original {
+  color: #656d76;
+  font-size: 11px;
+}
+
+tr.unmapped td {
+  background: #ffebe9;
+}
