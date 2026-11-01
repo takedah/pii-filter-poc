@@ -12,6 +12,7 @@ import base64
 import io
 import os
 import re
+import zipfile
 from collections.abc import Iterator
 from typing import TYPE_CHECKING, Literal, NotRequired, TypedDict
 
@@ -19,7 +20,6 @@ import boto3
 from bedrock_agentcore.runtime import BedrockAgentCoreApp
 from botocore.config import Config
 from openpyxl import Workbook, load_workbook
-from openpyxl.worksheet.worksheet import Worksheet
 
 if TYPE_CHECKING:
     from mypy_boto3_bedrock_runtime import BedrockRuntimeClient
@@ -39,6 +39,7 @@ MODEL_ID: str = os.environ.get("MODEL_ID", "jp.anthropic.claude-haiku-4-5-202510
 MAX_CHUNK_CHARS: int = 12_000
 # PoC の入力の上限。超えたらマスクする前にエラーにする
 MAX_FILE_BYTES: int = 1_000_000
+MAX_UNCOMPRESSED_BYTES: int = 20_000_000
 MAX_CELLS: int = 10_000
 MAX_CELL_CHARS: int = MAX_CHUNK_CHARS
 MAX_INSTRUCTION_CHARS: int = 2_000
@@ -196,22 +197,50 @@ def find_placeholders(original: str, masked: str) -> list[str]:
     return PLACEHOLDER.findall(masked)
 
 
-def mask_sheet(ws: Worksheet, usage_total: dict[str, int]) -> tuple[SheetResult, str]:
+def read_sheets(excel_bytes: bytes) -> list[tuple[str, list[list[str]]]]:
+    """Excel を読み込み、シートごとに (シート名, セルの文字列) を返す。上限を超えたら ValueError にする。"""
+    if len(excel_bytes) > MAX_FILE_BYTES:
+        raise ValueError(f"ファイルサイズが上限 ({MAX_FILE_BYTES} バイト) を超えています")
+    # xlsx は zip なので、小さなファイルでも展開すると大きくなることがある。読み込む前に展開後のサイズを確かめる
+    with zipfile.ZipFile(io.BytesIO(excel_bytes)) as zf:
+        uncompressed: int = sum(info.file_size for info in zf.infolist())
+    if uncompressed > MAX_UNCOMPRESSED_BYTES:
+        raise ValueError(f"展開後のサイズが上限 ({MAX_UNCOMPRESSED_BYTES} バイト) を超えています")
+
+    # read_only で 1 行ずつ読み、読みながらセル数と文字数を確かめる
+    wb: Workbook = load_workbook(io.BytesIO(excel_bytes), read_only=True, data_only=True)
+    sheets: list[tuple[str, list[list[str]]]] = []
+    total_cells: int = 0
+    try:
+        for ws in wb.worksheets:
+            rows: list[list[str]] = []
+            for values in ws.iter_rows(values_only=True):
+                total_cells += len(values)
+                if total_cells > MAX_CELLS:
+                    raise ValueError(f"セル数が上限 ({MAX_CELLS}) を超えています")
+                row: list[str] = [to_cell_text(v) for v in values]
+                for value in row:
+                    if len(value) > MAX_CELL_CHARS:
+                        raise ValueError(f"シート {ws.title} に {MAX_CELL_CHARS} 文字を超えるセルがあります")
+                rows.append(row)
+            sheets.append((ws.title, rows))
+    finally:
+        wb.close()
+    return sheets
+
+
+def mask_sheet(title: str, rows: list[list[str]], usage_total: dict[str, int]) -> tuple[SheetResult, str]:
     """シートをセル単位でマスクし、セル単位の結果とマスク済み TSV を返す。
 
     セルを 1 つずつ別のコンテンツブロックにして送る。1 つのテキストにまとめると、
     隣り合うセル (氏名とフリガナなど) が 1 つの PII として検出され、セルの区切りが消えるため。
     """
-    rows: list[list[str]] = [[to_cell_text(v) for v in row] for row in ws.iter_rows(values_only=True)]
-
     # (行, 列)。空のセルは送らない
     targets: list[tuple[int, int]] = []
     for r, row in enumerate(rows):
         for c, value in enumerate(row):
             if not value:
                 continue
-            if len(value) > MAX_CELL_CHARS:
-                raise ValueError(f"シート {ws.title} に {MAX_CELL_CHARS} 文字を超えるセルがあります")
             targets.append((r, c))
 
     blocks: list[str] = [rows[r][c] for r, c in targets]
@@ -244,7 +273,7 @@ def mask_sheet(ws: Worksheet, usage_total: dict[str, int]) -> tuple[SheetResult,
         result_rows.append(mapped)
         masked_lines.append("\t".join(masked_row))
 
-    sheet: SheetResult = {"name": ws.title, "rows": result_rows, "detections": detections}
+    sheet: SheetResult = {"name": title, "rows": result_rows, "detections": detections}
     return sheet, "\n".join(masked_lines)
 
 
@@ -266,27 +295,22 @@ def ask_claude(instruction: str, sheet_texts: list[tuple[str, str]]) -> tuple[st
 
 @app.entrypoint
 def invoke(payload: InvokePayload) -> InvokeResult:
-    excel_bytes: bytes = base64.b64decode(payload["content_base64"])
-    if len(excel_bytes) > MAX_FILE_BYTES:
-        raise ValueError(f"ファイルサイズが上限 ({MAX_FILE_BYTES} バイト) を超えています")
-    wb: Workbook = load_workbook(io.BytesIO(excel_bytes), data_only=True)
-    total_cells: int = sum(ws.max_row * ws.max_column for ws in wb.worksheets)
-    if total_cells > MAX_CELLS:
-        raise ValueError(f"セル数が上限 ({MAX_CELLS}) を超えています")
-    guardrail_usage: dict[str, int] = {}
-
-    sheets: list[SheetResult] = []
-    sheet_texts: list[tuple[str, str]] = []
-    for ws in wb.worksheets:
-        sheet, masked_text = mask_sheet(ws, guardrail_usage)
-        sheets.append(sheet)
-        sheet_texts.append((ws.title, masked_text))
-
+    # 入力の確認をすべて終えてから、ApplyGuardrail を呼ぶ
+    sheet_rows: list[tuple[str, list[list[str]]]] = read_sheets(base64.b64decode(payload["content_base64"]))
     raw_instruction: str = payload.get("instruction", "")
     if not raw_instruction.strip():
         raw_instruction = DEFAULT_INSTRUCTION
     if len(raw_instruction) > MAX_INSTRUCTION_CHARS:
         raise ValueError(f"指示が上限 ({MAX_INSTRUCTION_CHARS} 文字) を超えています")
+
+    guardrail_usage: dict[str, int] = {}
+    sheets: list[SheetResult] = []
+    sheet_texts: list[tuple[str, str]] = []
+    for title, rows in sheet_rows:
+        sheet, masked_text = mask_sheet(title, rows, guardrail_usage)
+        sheets.append(sheet)
+        sheet_texts.append((title, masked_text))
+
     instruction, instruction_detections = apply_guardrail(raw_instruction, "INPUT", guardrail_usage)
 
     answer, model_usage = ask_claude(instruction, sheet_texts)
