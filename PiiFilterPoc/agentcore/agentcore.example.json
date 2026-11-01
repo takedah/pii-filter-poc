@@ -17,7 +17,7 @@
         },
         {
           "name": "GUARDRAIL_VERSION",
-          "value": "2"
+          "value": "<GUARDRAIL_VERSION>"
         },
         {
           "name": "MODEL_ID",

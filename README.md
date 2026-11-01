@@ -33,7 +33,7 @@ Excel ファイルをアップロードすると、各セルを Guardrails（App
 
 ## 使い方
 
-前提：Node.js 20 以上、[AgentCore CLI](https://www.npmjs.com/package/@aws/agentcore)、uv、Python 3.13
+前提：Node.js 24、[AgentCore CLI](https://www.npmjs.com/package/@aws/agentcore)、uv、Python 3.13
 
 事前に、マネジメントコンソールで次のものを作成しておきます。
 
@@ -46,7 +46,8 @@ Excel ファイルをアップロードすると、各セルを Guardrails（App
 ```bash
 cd PiiFilterPoc
 cp agentcore/agentcore.example.json agentcore/agentcore.json
-# agentcore.json の <GUARDRAIL_ID>、<ACCOUNT_ID>、<EXECUTION_ROLE_NAME>、<USER_POOL_ID>、<CLIENT_ID> を書き換える
+# agentcore.json の <GUARDRAIL_ID>、<GUARDRAIL_VERSION>、<ACCOUNT_ID>、<EXECUTION_ROLE_NAME>、<USER_POOL_ID>、<CLIENT_ID> を書き換える
+# <GUARDRAIL_VERSION> は、Guardrail で発行したバージョンの番号（例：1）にする
 agentcore deploy --region ap-northeast-1
 ```
 
